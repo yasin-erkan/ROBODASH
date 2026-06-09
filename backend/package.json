@@ -7,7 +7,7 @@
     "start": "node server.js",
     "start:prod": "ENABLE_SIMULATOR=false node server.js",
     "db:setup": "mysql -u root -p -P 3307 < schema.sql",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,8 @@
     "mysql2": "^3.22.5",
     "socket.io": "^4.8.3",
     "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.8"
   }
 }

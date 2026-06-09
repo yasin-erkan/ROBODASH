@@ -41,7 +41,12 @@ const saveTelemetry = async data => {
   }
 };
 
-const saveSystemLog = async ({level = 'info', source = 'server', robot_id = null, message}) => {
+const saveSystemLog = async ({
+  level = 'info',
+  source = 'server',
+  robot_id = null,
+  message,
+}) => {
   const query =
     'INSERT INTO system_logs (level, source, robot_id, message) VALUES (?, ?, ?, ?)';
 

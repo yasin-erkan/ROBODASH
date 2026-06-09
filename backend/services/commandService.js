@@ -42,4 +42,11 @@ const dispatchCommand = async (
   return {ok: true, robotId, action};
 };
 
-module.exports = {VALID_ACTIONS, ACTION_LABELS, ROLES_CAN_COMMAND, dispatchCommand};
+module.exports = {
+  VALID_ACTIONS,
+  ACTION_LABELS,
+  ROLES_CAN_COMMAND,
+  dispatchCommand,
+};
+
+
